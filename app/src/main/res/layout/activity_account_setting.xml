@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSetting">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Account Setting"
+            android:textColor="#EFE9E9"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/img_back"
+            android:layout_alignStart="@+id/img_back"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_bottom"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/img_bottom"
+            android:text="CTCU App"
+            android:textColor="#ECE7E7"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txt_topafter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_top"
+            android:layout_alignStart="@+id/txt_top"
+            android:layout_toEndOf="@+id/img_bottom"
+            android:text="Pushing Beyond Limits"
+            android:textColor="#F1EDED"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rtl_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="40dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Name :"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtChangeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Dilshan Jayasekara"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtChangeName"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout1"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Email :"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtChangeEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="130susith@gmail.com"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtChangeEmail"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtNICL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="NIC :"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtNIC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="962660142V"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtNIC"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout3"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/Mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Mobile:"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="0766414584"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtMobileNumber"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout4"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/VehicleType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Vehicle Type:"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Car"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtVehicleType"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout5"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/VehicleNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Vehicle Number:"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtVehicleNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="CNA - 8090"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtVehicleNumber"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rth_layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rtl_layout_top"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="40dp">
+
+                <TextView
+                    android:id="@+id/txt1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layout2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1_1"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtHelpAndSupport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Help and Support"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtHelpAndSupport"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2_1"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtGiveUsFeedBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Provide Feedback"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtGiveUsFeedBack"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2_2"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtTermsAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Tearms and Condition"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtTermsAndConditions"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2_3"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Privacy Policy"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtPrivacyPolicy"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2_4"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtAppVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="App Version"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtAppVersionNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Beta V 1.0"
+                        android:textColor="#3F51B5"
+                        android:textSize="13sp" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_below="@id/txtAppVersionNo"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.3" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rth_layout_bottom"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="#7EAABD"
+                android:text="Logout"
+                android:textColor="#F1EEEE"
+                tools:ignore="TextContrastCheck" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

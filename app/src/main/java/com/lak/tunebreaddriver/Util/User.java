@@ -1,5 +1,4 @@
 package com.lak.tunebreaddriver.Util;
-//package com.example.userapp.Util;
 
 public class User {
     public String fname;

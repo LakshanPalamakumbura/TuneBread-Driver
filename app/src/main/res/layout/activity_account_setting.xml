@@ -50,7 +50,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@+id/img_bottom"
-            android:text="CTCU App"
+            android:text="TuneBread Driver App"
             android:textColor="#ECE7E7"
             android:textSize="20dp" />
 
@@ -115,7 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="Dilshan Jayasekara"
+                        android:text="W.P Dharmasiri"
                         android:textColor="#3F51B5"
                         android:textSize="13sp" />
 
@@ -149,7 +149,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="130susith@gmail.com"
+                        android:text="darmasiri@tunebread.com"
                         android:textColor="#3F51B5"
                         android:textSize="13sp" />
 
@@ -183,7 +183,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="962660142V"
+                        android:text="812660142V"
                         android:textColor="#3F51B5"
                         android:textSize="13sp" />
 
@@ -217,7 +217,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="0766414584"
+                        android:text="0774603387"
                         android:textColor="#3F51B5"
                         android:textSize="13sp" />
 
@@ -250,7 +250,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="Car"
+                        android:text="Three Weel"
                         android:textColor="#3F51B5"
                         android:textSize="13sp" />
 

@@ -1,5 +1,4 @@
 package com.lak.tunebreaddriver.Util;
-//package com.example.userapp.Util;
 
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
@@ -58,20 +57,24 @@ public class GeofenceBroadcastReceiver extends BroadcastReceiver {
                 String mobile = appConfig.getLogedUserID();
                 //   Toast.makeText(context, appConfig.getLogedUserID(), Toast.LENGTH_SHORT).show();
                 mDatabase.child("users").child(mobile).child("authorize").setValue(true);
-                appConfig.setUserAuthorize();
-                break;
-            case Geofence.GEOFENCE_TRANSITION_DWELL:
-                Toast.makeText(context, "GEOFENCE_TRANSITION_DWELL", Toast.LENGTH_SHORT).show();
-                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_DWELL", "", MapsActivity.class);
-                break;
-            case Geofence.GEOFENCE_TRANSITION_EXIT:
-                Toast.makeText(context, "GEOFENCE_TRANSITION_EXIT", Toast.LENGTH_SHORT).show();
-                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_EXIT", "", MapsActivity.class);
+//                appConfig.setUserAuthorize();
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     firebaseDB.createAlert(appConfig.getLogedUserID(),appConfig.getLoggedVehicle(), appConfig.getLoggedVehicleType());
                     appConfig.setUserUnAuthorize();
                 }
                 break;
+//            case Geofence.GEOFENCE_TRANSITION_DWELL:
+//                Toast.makeText(context, "GEOFENCE_TRANSITION_DWELL", Toast.LENGTH_SHORT).show();
+//                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_DWELL", "", MapsActivity.class);
+//                break;
+//            case Geofence.GEOFENCE_TRANSITION_EXIT:
+//                Toast.makeText(context, "GEOFENCE_TRANSITION_EXIT", Toast.LENGTH_SHORT).show();
+//                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_EXIT", "", MapsActivity.class);
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//                    firebaseDB.createAlert(appConfig.getLogedUserID(),appConfig.getLoggedVehicle(), appConfig.getLoggedVehicleType());
+//                    appConfig.setUserUnAuthorize();
+//                }
+//                break;
         }
 
     }

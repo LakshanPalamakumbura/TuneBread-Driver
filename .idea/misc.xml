@@ -7,12 +7,13 @@
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_circle_down_24.xml" value="0.228" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.174" />
         <entry key="app/src/main/res/font/open_sans_bold.xml" value="0.15729166666666666" />
-        <entry key="app/src/main/res/layout/activity_account_setting.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_account_setting.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_direct_map.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_generate_qrcode.xml" value="0.1320754716981132" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12672176308539945" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_otpactivity.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_otplogin.xml" value="0.20535714285714285" />
         <entry key="app/src/main/res/layout/activity_user_alert.xml" value="0.24791666666666667" />

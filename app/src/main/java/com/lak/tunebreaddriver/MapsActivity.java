@@ -1,5 +1,4 @@
 package com.lak.tunebreaddriver;
-//package com.example.userapp;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
@@ -152,8 +151,33 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.setOnMapLongClickListener(this);
 
-//        mDatabase = FirebaseDatabase.getInstance().getReference().child("location").child(appConfig.getLogedUserID());
-        // meny add chiled below
+////        mDatabase = FirebaseDatabase.getInstance().getReference().child("location").child(appConfig.getLogedUserID());
+//        // meny add chiled below
+//        mDatabase.child("location").addListenerForSingleValueEvent(new ValueEventListener() {
+//
+////        mDatabase.child("location").child(appConfig.getLogedUserID()).addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                if (dataSnapshot.getValue() != null) {
+//                    Log.d("DB", dataSnapshot.getValue().toString());
+//                    locationObj = dataSnapshot.getValue(Location.class);
+//                    LatLng latLng = new LatLng(Double.parseDouble(locationObj.latitude),Double.parseDouble(locationObj.longitude));
+//                    handleMapLongClick(latLng);
+////                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+////                    LatLng latLng = new LatLng(Double.parseDouble(locationObj.latitude),Double.parseDouble(locationObj.longitude));
+//////                        LatLng latLng = new LatLng(ds.child("latitude").getValue(Double.class), ds.child("longitude").getValue(Double.class));
+////                        locationObj = dataSnapshot.getValue(Location.class);
+////                          handleMapLongClick(latLng);
+////                    }
+//                } else {
+//                    Log.i("DB", "Location Doesn't Available");
+//                }
+//            }
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
         mDatabase.child("location").child(appConfig.getLogedUserID()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
